@@ -1,0 +1,22 @@
+body {
+  background-color: #333;
+  color: #eee;
+  padding: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  h1 {
+    color: gold;
+  }
+
+  nav {
+    padding: 0.5rem;
+    background-color: #222;
+    a {
+      margin-right: 1rem;
+      color: #eee;
+      text-decoration: none;
+    }
+    a.active {
+      color: rgb(245, 245, 100);
+    }
+  }
+}

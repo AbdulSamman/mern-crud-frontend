@@ -1,22 +1,85 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #333;
   color: #eee;
   padding: 1rem;
   font-family: "Courier New", Courier, monospace;
-  h1 {
-    color: gold;
-  }
-
-  nav {
-    padding: 0.5rem;
-    background-color: #222;
-    a {
-      margin-right: 1rem;
-      color: #eee;
-      text-decoration: none;
+  .App {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 1rem;
+    .addBtn {
+      margin: 1rem 0;
     }
-    a.active {
-      color: rgb(245, 245, 100);
+    h1 {
+      color: gold;
+    }
+
+    nav {
+      padding: 0.5rem;
+      background-color: #222;
+      a {
+        margin-right: 1rem;
+        color: #eee;
+        text-decoration: none;
+      }
+      a.active {
+        color: rgb(245, 245, 100);
+      }
+    }
+    .pageWelcome {
+      .books {
+        .book {
+          display: flex;
+          margin-bottom: 1rem;
+          align-items: center;
+          background-color: #222;
+          gap: 1rem;
+          padding: 0.5rem;
+          justify-content: space-between;
+          .image {
+            width: 100px;
+            height: 150px;
+            img {
+              width: 100px;
+              height: 150px;
+            }
+          }
+          .row {
+            display: flex;
+            flex-flow: column wrap;
+            row-gap: 10px;
+            .title {
+              a {
+                color: gold;
+              }
+            }
+            .description {
+              font-size: 10px;
+              font-style: italic;
+              padding: 5px;
+            }
+            span {
+              color: orange;
+            }
+            .button {
+              display: flex;
+              align-items: center;
+              column-gap: 1rem;
+            }
+          }
+        }
+      }
+    }
+    button {
+      padding: 2px 5px;
+      border-radius: 5px;
+      cursor: pointer;
     }
   }
 }

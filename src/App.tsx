@@ -1,8 +1,7 @@
 import { NavLink, Navigate, Routes, Route } from "react-router-dom";
-
 import "./App.scss";
-import { PageAbout } from "./pages/PageAbout";
-import { PageInfo } from "./pages/PageInfo";
+import { PageLogout } from "./pages/PageLogout";
+import { PageLogin } from "./pages/PageLogin";
 import { PageWelcome } from "./pages/PageWelcome";
 
 function App() {
@@ -12,13 +11,13 @@ function App() {
 
       <nav>
         <NavLink to="/">Welcome</NavLink>
-        <NavLink to="/info">Info</NavLink>
-        <NavLink to="/about">About</NavLink>
+        <NavLink to="/login">Login</NavLink>
+        <NavLink to="/logout">Logout</NavLink>
       </nav>
       <Routes>
         <Route path="/" element={<PageWelcome />} />
-        <Route path="info" element={<PageInfo />} />
-        <Route path="about" element={<PageAbout />} />
+        <Route path="login" element={<PageLogin />} />
+        <Route path="logout" element={<PageLogout />} />
         <Route path="/" element={<Navigate to="/" replace />} />
       </Routes>
     </div>

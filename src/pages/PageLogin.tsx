@@ -2,14 +2,14 @@ import { useContext } from "react";
 import { AppContext } from "../AppContext";
 import { Helmet } from "react-helmet";
 
-export const PageInfo = () => {
+export const PageLogin = () => {
   const { appTitle } = useContext(AppContext);
   return (
     <div>
       <Helmet>
-        <title>{appTitle} - Info</title>
+        <title>{appTitle} - Login</title>
       </Helmet>
-      <p>welcome to the Info page</p>
+      <p>welcome to the Login page</p>
     </div>
   );
 };
